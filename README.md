@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+December 13, 2020
 
 ### Project Title
-Replace the Project Title
+Data analysis project 
 
 ### Description
-Describe what your project is about and what it does
+Analyze data of bike travles for different cities by applying different filters
 
 ### Files used
-Include the files used
+chicago.csv, new_york_city.csv, washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Special thanks to well documented information of pandas
 
