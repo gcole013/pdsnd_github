@@ -17,7 +17,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
-    while True:
+    while 1:
         city = input('Enter City to analyze from (chicago, new york city, washington): ').lower()
         if city in CITY_DATA:
             break
@@ -26,7 +26,7 @@ def get_filters():
 
     # get user input for month (all, january, february, ... , june)
 
-    while True:
+    while 1:
         month = input(
             "Enter month to analyze from ('all', 'january', 'february', 'march', 'april', 'may', 'june'): ").title()
         if month in ['All', 'January', 'February', 'March', 'April', 'May', 'June']:
@@ -36,7 +36,7 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
-    while True:
+    while 1:
         day = input(
             "Enter day to analyze from ('all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', "
             "'sunday'): ").title()
@@ -149,11 +149,11 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # display total travel time
-    trip_duration = df['Trip Duration'].sum()
-    print('Total Trip Duration:', trip_duration)
+    tripDuration = df['Trip Duration'].sum()
+    print('Total Trip Duration:', tripDuration)
 
     # display mean travel time
-    print('Mean Travel Time:', trip_duration / len(df.index))
+    print('Mean Travel Time:', tripDuration / len(df.index))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 80)
